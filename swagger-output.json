@@ -5,10 +5,9 @@
     "description": "Enables creation, reading, updating and deletion of books and their reviews",
     "version": "1.0.0"
   },
-  "host": "localhost:3000",
+  "host": "https://cse341-project2-5i4x.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http",
     "https"
   ],
   "paths": {
