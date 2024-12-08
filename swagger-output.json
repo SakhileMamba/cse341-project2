@@ -7,12 +7,32 @@
   },
   "host": "https://cse341-project2-5i4x.onrender.com",
   "basePath": "/",
-  "schemes": [
-    "https"
-  ],
+  "schemes": ["https"],
   "paths": {
+    "/": {
+      "get": {
+        "tags": ["CSE341 Project 2"],
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api-docs": {
+      "get": {
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
     "/book/": {
       "get": {
+        "tags": ["Books"],
         "description": "",
         "responses": {
           "200": {
@@ -24,6 +44,7 @@
         }
       },
       "post": {
+        "tags": ["Books"],
         "description": "",
         "parameters": [
           {
@@ -69,6 +90,7 @@
     },
     "/book/{id}": {
       "get": {
+        "tags": ["Books"],
         "description": "",
         "parameters": [
           {
@@ -91,6 +113,7 @@
         }
       },
       "put": {
+        "tags": ["Books"],
         "description": "",
         "parameters": [
           {
@@ -140,6 +163,7 @@
         }
       },
       "delete": {
+        "tags": ["Books"],
         "description": "",
         "parameters": [
           {
@@ -164,6 +188,7 @@
     },
     "/review/": {
       "get": {
+        "tags": ["Reviews"],
         "description": "",
         "responses": {
           "200": {
@@ -175,6 +200,7 @@
         }
       },
       "post": {
+        "tags": ["Reviews"],
         "description": "",
         "parameters": [
           {
@@ -214,6 +240,7 @@
     },
     "/review/{id}": {
       "get": {
+        "tags": ["Reviews"],
         "description": "",
         "parameters": [
           {
@@ -236,6 +263,7 @@
         }
       },
       "put": {
+        "tags": ["Reviews"],
         "description": "",
         "parameters": [
           {
@@ -273,6 +301,7 @@
         }
       },
       "delete": {
+        "tags": ["Reviews"],
         "description": "",
         "parameters": [
           {

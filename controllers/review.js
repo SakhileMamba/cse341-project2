@@ -2,6 +2,7 @@ const db = require('../models');
 const Review = db.review;
 
 module.exports.createReview = (req, res) => {
+  //#swagger.tags=['Reviews']
   try {
     const bookId = req.body.bookId;
     Review.find({ _id: bookId })
@@ -36,6 +37,7 @@ module.exports.createReview = (req, res) => {
 };
 
 module.exports.getAll = (req, res) => {
+  //#swagger.tags=['Reviews']
   try {
     Review.find({})
       .then((data) => {
@@ -52,6 +54,7 @@ module.exports.getAll = (req, res) => {
 };
 
 module.exports.getOne = (req, res) => {
+  //#swagger.tags=['Reviews']
   try {
     const id = req.params.id;
     Review.findOne({ _id: id })
@@ -69,6 +72,7 @@ module.exports.getOne = (req, res) => {
 };
 
 module.exports.updateReview = async (req, res) => {
+  //#swagger.tags=['Reviews']
   try {
     const id = req.params.id;
 
@@ -87,6 +91,7 @@ module.exports.updateReview = async (req, res) => {
 };
 
 module.exports.deleteReview = async (req, res) => {
+  //#swagger.tags=['Reviews']
   try {
     const id = req.params.id;
     Review.deleteOne({ _id: id })

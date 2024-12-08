@@ -2,6 +2,7 @@ const db = require('../models');
 const Book = db.book;
 
 module.exports.createBook = (req, res) => {
+  //#swagger.tags=['Books']
   try {
     const book = new Book(req.body);
     book
@@ -20,6 +21,7 @@ module.exports.createBook = (req, res) => {
 };
 
 module.exports.getAll = async (req, res) => {
+  //#swagger.tags=['Books']
   try {
     await Book.find({})
       .then((data) => {
@@ -36,6 +38,7 @@ module.exports.getAll = async (req, res) => {
 };
 
 module.exports.getOne = (req, res) => {
+  //#swagger.tags=['Books']
   try {
     const id = req.params.id;
     Book.findOne({ _id: id })
@@ -53,6 +56,7 @@ module.exports.getOne = (req, res) => {
 };
 
 module.exports.updateBook = async (req, res) => {
+  //#swagger.tags=['Books']
   try {
     const id = req.params.id;
 
@@ -71,6 +75,7 @@ module.exports.updateBook = async (req, res) => {
 };
 
 module.exports.deleteBook = async (req, res) => {
+  //#swagger.tags=['Books']
   try {
     const id = req.params.id;
     Book.deleteOne({ _id: id })
