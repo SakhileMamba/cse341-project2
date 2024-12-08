@@ -1,0 +1,61 @@
+// LOCALHOST ### Get all review GET http://localhost:3000/review
+
+### Get contact by id GET http://localhost:3000/review/674210f79f7e019b3b82df26
+
+### Create contact POST http://localhost:3000/review HTTP/1.1 content-type: application/json
+
+{"_id":{"$oid":"6754c6e19a570948694bdc9e"},"bookId":{"$oid":"675498d09a570948694bd47b"},"reviewer":"John Zad Smith","review":"A masterpiece of American literature. Fitzgerald's prose is lyrical and the story of Jay Gatsby's pursuit of the American Dream remains powerful and relevant.","date":{"$date":{"$numberLong":"1702598400000"}}}
+
+### Update contact PUT http://localhost:3000/review/674212b29f7e019b3b82df28 HTTP/1.1 content-type: application/json
+
+{"_id":{"$oid":"6754c6e19a570948694bdc9e"},"bookId":{"$oid":"675498d09a570948694bd47b"},"reviewer":"John Zad Smith","review":"A masterpiece of American literature. Fitzgerald's prose is lyrical and the story of Jay Gatsby's pursuit of the American Dream remains powerful and relevant.","date":{"$date":{"$numberLong":"1702598400000"}}}
+
+### Delete contact DELETE http://localhost:3000/review/674bc436f8458c42cd6c942a HTTP/1.1
+
+// PRODUCTION Deploy ### Get all review GET https://cse341-project1-7h3p.onrender.com/review
+
+### Get contact by id GET https://cse341-project1-7h3p.onrender.com/review/674210f79f7e019b3b82df26
+
+### Create contact POST https://cse341-project1-7h3p.onrender.com/review HTTP/1.1 content-type: application/json
+
+{"_id":{"$oid":"6754c6e19a570948694bdc9e"},"bookId":{"$oid":"675498d09a570948694bd47b"},"reviewer":"John Zad Smith","review":"A masterpiece of American literature. Fitzgerald's prose is lyrical and the story of Jay Gatsby's pursuit of the American Dream remains powerful and relevant.","date":{"$date":{"$numberLong":"1702598400000"}}}
+
+### Update contact PUT https://cse341-project1-7h3p.onrender.com/review/674212b29f7e019b3b82df28 HTTP/1.1 content-type: application/json
+
+{"_id":{"$oid":"6754c6e19a570948694bdc9e"},"bookId":{"$oid":"675498d09a570948694bd47b"},"reviewer":"John Zad Smith","review":"A masterpiece of American literature. Fitzgerald's prose is lyrical and the story of Jay Gatsby's pursuit of the American Dream remains powerful and relevant.","date":{"$date":{"$numberLong":"1702598400000"}}}
+
+### DELETE contact DELETE https://cse341-project1-7h3p.onrender.com/review/674bc436f8458c42cd6c942a HTTP/1.1
+
+
+
+
+
+
+
+// LOCALHOST ### Get all book GET http://localhost:3000/book
+
+### Get contact by id GET http://localhost:3000/book/674210f79f7e019b3b82df26
+
+### Create contact POST http://localhost:3000/book HTTP/1.1 content-type: application/json
+
+{"_id":{"$oid":"675498d09a570948694bd47b"},"title":"The Great Gatsby","author":"F. Scott Fitzgerald","isbn":"978-0743273565","publishYear":{"$numberInt":"1925"},"genre":"Literary Fiction","publisher":"Charles Scribner's Sons","language":"English","pageCount":{"$numberInt":"180"}}
+
+### Update contact PUT http://localhost:3000/book/674212b29f7e019b3b82df28 HTTP/1.1 content-type: application/json
+
+{"_id":{"$oid":"675498d09a570948694bd47b"},"title":"The Great Gatsby","author":"F. Scott Fitzgerald","isbn":"978-0743273565","publishYear":{"$numberInt":"1925"},"genre":"Literary Fiction","publisher":"Charles Scribner's Sons","language":"English","pageCount":{"$numberInt":"180"}} 
+
+### Delete contact DELETE http://localhost:3000/book/674bc436f8458c42cd6c942a HTTP/1.1
+
+// PRODUCTION Deploy ### Get all book GET https://cse341-project1-7h3p.onrender.com/book
+
+### Get contact by id GET https://cse341-project1-7h3p.onrender.com/book/674210f79f7e019b3b82df26
+
+### Create contact POST https://cse341-project1-7h3p.onrender.com/book HTTP/1.1 content-type: application/json
+
+{"_id":{"$oid":"675498d09a570948694bd47b"},"title":"The Great Gatsby","author":"F. Scott Fitzgerald","isbn":"978-0743273565","publishYear":{"$numberInt":"1925"},"genre":"Literary Fiction","publisher":"Charles Scribner's Sons","language":"English","pageCount":{"$numberInt":"180"}}
+
+### Update contact PUT https://cse341-project1-7h3p.onrender.com/book/674212b29f7e019b3b82df28 HTTP/1.1 content-type: application/json
+
+{"_id":{"$oid":"675498d09a570948694bd47b"},"title":"The Great Gatsby","author":"F. Scott Fitzgerald","isbn":"978-0743273565","publishYear":{"$numberInt":"1925"},"genre":"Literary Fiction","publisher":"Charles Scribner's Sons","language":"English","pageCount":{"$numberInt":"180"}}
+
+### DELETE contact DELETE https://cse341-project1-7h3p.onrender.com/book/674bc436f8458c42cd6c942a HTTP/1.1
