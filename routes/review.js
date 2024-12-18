@@ -3,6 +3,7 @@ const router = express.Router();
 const reviewController = require('../controllers/review');
 const validation = require('../middleware/validation');
 const { validate } = require('../models/book');
+const { isAuthenticated } = require('../middleware/authentication');
 
 router.get('/', reviewController.getAll);
 router.get(
@@ -13,12 +14,14 @@ router.get(
 );
 router.post(
   '/',
+  isAuthenticated,
   validation.validateReviewRules,
   validation.validateReview,
   reviewController.createReview
 );
 router.put(
   '/:id',
+  isAuthenticated,
   validation.validateObjectIdRule,
   validation.validateReviewRules,
   validation.validateReview,
@@ -26,6 +29,7 @@ router.put(
 );
 router.delete(
   '/:id',
+  isAuthenticated,
   validation.validateObjectIdRule,
   validation.validateObjectId,
   reviewController.deleteReview
